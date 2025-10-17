@@ -1,13 +1,9 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+//Binh Minh TRAN et Marouane NOUARA
 package Exo3;
 
-/**
- *
- * @author minhm
- */
+
 public class Main {
-    
+    public static void main(String[] args) {
+    // code ici
+}
 }
