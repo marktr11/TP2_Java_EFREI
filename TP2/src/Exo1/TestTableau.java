@@ -46,24 +46,8 @@ public class TestTableau {
     for (int i = 0; i < tab.length;i++){
         System.out.println("Livre " + (i+1) +": " + tab[i] + " pages");  
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
     }   
 
-    private static class ArrayUtils {
-
-        private static void removeElement(int[] tab, int id_min) {
-            throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-        }
-
-        public ArrayUtils() {
-        }
-    }
+    
 }
