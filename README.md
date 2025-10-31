@@ -6,13 +6,14 @@
 TP2/
 ├── src/
 │   ├── Exo1/
-│   │   └── Main.java (Fini)
+│   │   └── TestTableau.java (Fini)
 │   ├── Exo2/
 │   │   └── Main.java
 │   ├── Exo3/
 │   │   └── Main.java
 │   └── Exo4/
-│       └── Main.java (Fini partie 1)
+│       └── Main.java
+|       └── Etudiant.java (Fini)
 ```
 
 ## Membres du groupe
