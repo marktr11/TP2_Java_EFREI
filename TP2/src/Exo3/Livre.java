@@ -1,14 +1,14 @@
 package Livre;
 
 public class Livre {
-    // 🔹 Attributs
+    // Attributs
     private String titre;
     private int code;
     private String auteur;
     private int nbPages;
     private int anneeEdition;
 
-    // 🔹 Constructeur
+    //  Constructeur
     public Livre(String titre, int code, String auteur, int nbPages, int anneeEdition) {
         this.titre = titre;
         this.code = code;
@@ -17,7 +17,7 @@ public class Livre {
         this.anneeEdition = anneeEdition;
     }
 
-    // 🔹 Getters et Setters
+    //  Getters et Setters
     public String getTitre() {
         return titre;
     }
@@ -58,7 +58,7 @@ public class Livre {
         this.anneeEdition = anneeEdition;
     }
 
-    // 🔹 Méthode toString() pour afficher les infos du livre
+    //  Méthode toString() pour afficher les infos du livre
     @Override
     public String toString() {
         return "Livre [code=" + code +
