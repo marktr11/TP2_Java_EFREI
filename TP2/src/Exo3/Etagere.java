@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.ArrayList;
 import java.util.Comparator;
 
-public class Etagere {
+public class Etagere{
     // Attributs
     private int code;             // code unique de l’étagère
     private String domaine;       //sujet 
@@ -29,6 +29,18 @@ public class Etagere {
     }
 
     // 2) Suppression d’un livre (par code) 
+    
+    // Recherche l'indice d'un livre par son code
+    // Retourne -1 si aucun livre trouvé
+    private int indexOfCode(int code) {
+        for (int i = 0; i < livres.length; i++) {
+            if (livres[i] != null && livres[i].getCode() == code) {
+                return i;
+            }
+        }
+        return -1;
+    }
+
     public void supprimerLivre(int code) {
         int idx = indexOfCode(code);
       if (idx == -1) { 
@@ -55,7 +67,7 @@ public class Etagere {
     public Livre chercherLivreParTitre(String titre) {
         for (int i = 0; i < nbLivres; i++) {
             if (livres[i].getTitre().equalsIgnoreCase(titre)) {
-                return livres[i];
+                return livres[i];// toString() de l'objet livre 
             }
         }
         System.out.println("Livre au titre \"" + titre + "\" introuvable.");
@@ -115,7 +127,6 @@ public class Etagere {
     }
 
     //9) Tri 
-
     public void trierParNombreDePages() {
         Arrays.sort(livres, 0, nbLivres, Comparator.comparingInt(Livre::getNbPages));
     }

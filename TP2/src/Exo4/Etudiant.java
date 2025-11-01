@@ -1,4 +1,3 @@
-// Binh Minh Tran
 package Exo4;
 
 

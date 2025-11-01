@@ -1,8 +1,10 @@
-//Binh Minh TRAN et Marouane NOUARA
 package Exo3;
 
-public class Main {
+
+public class BibliothequeTest {
     public static void main(String[] args) {
+        //---------------------------- Tableau ----------------------
+        
         //  livres 
         Livre l1 = new Livre("1984", 101, "George Orwell", 328, 1949);
         Livre l2 = new Livre("Le Petit Prince", 102, "Antoine de Saint-Exupéry", 96, 1943);
@@ -10,7 +12,7 @@ public class Main {
         Livre l4 = new Livre("L'Étranger", 104, "Albert Camus", 185, 1942);
 
         //  Création d'une étagère
-        Etagere etagere = new Etagere(1, "Littérature", 5);
+        Etagere etagere = new Etagere(1, "Littérature", 5); 
 
         //Ajout de livres
         etagere.ajouterLivre(l1);
@@ -19,30 +21,41 @@ public class Main {
         etagere.ajouterLivre(l4);
 
         // Affichage des livres 
-        System.out.println("\n Liste des livres sur l’étagère :");
+        System.out.println("\nListe des livres sur l’étagère :");
         etagere.afficherLivres();
 
         // Suppression d’un livre
-        System.out.println("\n Suppression du livre avec code 102 :");
+        System.out.println("\nSuppression du livre avec code 102 :");
         etagere.supprimerLivre(102);
         etagere.afficherLivres();
 
         //  4) Somme des pages 
         int totalPages = etagere.sommePages();
-        System.out.println("\n Nombre total de pages : " + totalPages);
+        System.out.println("\nNombre total de pages : " + totalPages);
 
         // 5) Recherche par titre 
-        System.out.println("\n Recherche du livre '1984' :");
+        System.out.println("\nRecherche du livre '1984' :");
         Livre recherche = etagere.chercherLivreParTitre("1984");
         if (recherche != null) System.out.println("Trouvé → " + recherche);
 
-        //  6) Petits livres (<200 pages) 
-        System.out.println("\n Livres avec moins de 200 pages :");
+        //  6) Petits livres (<200 pages - seuil) 
+        System.out.println("\nLivres avec moins de 200 pages :");
         etagere.chercherPetitsLivres(200);
 
         //  7) Nouveaux livres (édition 1949) 
-        System.out.println("\n Livres édités en 1949 :");
+        System.out.println("\n");
         etagere.afficherNouveauxLivres(1949);
+        
+        // 8) Modifier le nombre de pages d'un livre en fonction de son code.
+        etagere.changerNbPages(104, 300);
+        // Petits livres (<200 pages - seuil) après modifier le nombre de pages
+        System.out.println("\nLivres avec moins de 200 pages :");
+        etagere.chercherPetitsLivres(200);
+        
+        
+        
+        
+        //---------------------------- ArrayList ----------------------
+        
     }
 }
-

@@ -1,9 +1,4 @@
-//Marouane NOUARA
 package Exo4;
-
-
-package Exo4;
-
 import java.util.List;
 
 public class Main {
