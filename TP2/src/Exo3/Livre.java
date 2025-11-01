@@ -1,4 +1,4 @@
-package Livre;
+package Exo3;
 
 public class Livre {
     // Attributs
