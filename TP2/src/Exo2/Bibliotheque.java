@@ -1,4 +1,3 @@
-//Marouane NOUARA
 package Exo2;
 
 

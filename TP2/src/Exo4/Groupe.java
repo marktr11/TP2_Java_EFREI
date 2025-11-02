@@ -77,5 +77,5 @@ public class Groupe {
     public String getNomGroupe() { return nomGroupe; }
     public List<Etudiant> getEtudiants() { return etudiants; }
     
-    // setter
+    // setter ?????? où sont les setters
 }

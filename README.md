@@ -1,25 +1,51 @@
 # TP2 Java - EFREI
 
-## Structure du Projet
+Projet réalisé dans le cadre du cours de Programmation Orientée Objet (POO) en Java.
+
+## 📁 Structure du Projet
 
 ```
 TP2/
 ├── src/
 │   ├── Exo1/
-│   │   └── TestTableau.java (Fini)
+│   │   └── TestTableau.java       # Manipulation de tableaux
 │   ├── Exo2/
-│   │   └── Main.java
+│   │   └── Bibliotheque.java      # Gestion de bibliothèque
 │   ├── Exo3/
-│   │   └── Main.java
+│   │   ├── Livre.java             # Classe Livre
+│   │   ├── Etagere.java            # Classe Etagere (version tableau)
+│   │   ├── EtagereV2.java          # Classe EtagereV2 (version ArrayList)
+│   │   └── BibliothequeTest.java  # Tests des classes
 │   └── Exo4/
-│       └── Main.java
-|       └── Etudiant.java (Fini)
+│       ├── Etudiant.java           # Classe Etudiant
+│       ├── Groupe.java             # Classe Groupe
+│       └── Main.java               # Point d'entrée principal
 ```
 
-## Membres du groupe
-Binh Minh TRAN et Marouane NOUARA
+
+## Membres du Groupe
+
+- **Binh Minh TRAN**
+- **Marouane NOUARA**
+
+## Prérequis
+
+- **Java Development Kit (JDK)** 8 ou supérieur
+- **NetBeans IDE** (recommandé) ou autre IDE Java
+
+## 🚀 Compilation et Exécution
+
+### Avec NetBeans IDE
+1. Ouvrir le projet dans NetBeans
+2. Cliquer droit sur le fichier `Main.java` ou `BibliothequeTest.java`
+3. Sélectionner "Run File" (Shift + F6)
 
 
-## Prérequis système
-- Java Development Kit (JDK)
-- NetBeans IDE
+## 📝 Notes
+
+- Les exercices sont organisés dans des packages séparés
+- Tous les exercices sont fonctionnels et testés
+
+---
+
+*TP réalisé dans le cadre des cours de Java du semestre 5 à l'EFREI*

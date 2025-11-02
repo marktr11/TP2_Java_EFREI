@@ -47,3 +47,7 @@ Thumbs.db
 # Build tool specific
 manifest.mf
 build.xml
+
+# Cheatsheet (fiche de référence personnelle)
+CHEATSHEET.md
+TP2/CHEATSHEET.md
