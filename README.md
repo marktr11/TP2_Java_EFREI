@@ -28,19 +28,6 @@ TP2/
 - **Binh Minh TRAN**
 - **Marouane NOUARA**
 
-## Prérequis
-
-- **Java Development Kit (JDK)** 8 ou supérieur
-- **NetBeans IDE** (recommandé) ou autre IDE Java
-
-## 🚀 Compilation et Exécution
-
-### Avec NetBeans IDE
-1. Ouvrir le projet dans NetBeans
-2. Cliquer droit sur le fichier `Main.java` ou `BibliothequeTest.java`
-3. Sélectionner "Run File" (Shift + F6)
-
-
 ## 📝 Notes
 
 - Les exercices sont organisés dans des packages séparés
