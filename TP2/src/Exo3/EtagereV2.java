@@ -20,7 +20,7 @@ public class EtagereV2 {
     }
 
     //1) Ajout d’un livre 
-    public void ajouterLivre(Livre livre) {
+    public void ajouterLivre2(Livre livre) {
         livres.add(livre);
         nbLivres++;
         System.out.println("Livre ajouté à l'ÉtagèreV2 : " + livre.getTitre());
@@ -30,7 +30,7 @@ public class EtagereV2 {
     
     // Recherche l'indice d'un livre par son code
     // Retourne -1 si aucun livre trouvé
-    private int indexOfCode(int code) {
+    private int indexOfCode2(int code) {
         for (int i = 0; i < livres.size(); i++) {
             if (livres.get(i) != null && livres.get(i).getCode() == code) { 
                 //livres.get(i) est l'objet livre à l'indice i 
@@ -42,8 +42,8 @@ public class EtagereV2 {
         return -1;
     }
 
-    public void supprimerLivre(int code) {
-        int idx = indexOfCode(code);
+    public void supprimerLivre2(int code) {
+        int idx = indexOfCode2(code);
         if (idx == -1) { 
         System.out.println("Aucun livre avec le code " + code + " trouvé.");
         return;
@@ -55,7 +55,7 @@ public class EtagereV2 {
     }
 
     // 3) Somme des pages 
-    public int sommePages() {
+    public int sommePages2() {
       int somme = 0;
       for (int i = 0; i < nbLivres; i++) {
           somme += livres.get(i).getNbPages(); 
@@ -64,7 +64,7 @@ public class EtagereV2 {
     }
 
     //4) Recherche par titre 
-    public Livre chercherLivreParTitre(String titre) {
+    public Livre chercherLivreParTitre2(String titre) {
         for (int i = 0; i < nbLivres; i++) {
             if (livres.get(i).getTitre().equalsIgnoreCase(titre)) {
                 return livres.get(i);// toString() de l'objet livre 
@@ -77,7 +77,7 @@ public class EtagereV2 {
     //5) Petits livres (< seuil pages) 
     
     //Recherche tous les livres ayant un nombre de pages inférieur au seuil donné.
-    public ArrayList<Livre> chercherPetitsLivres(int seuil) {
+    public ArrayList<Livre> chercherPetitsLivres2(int seuil) {
         // Création d'une ArrayList temporaire pour stocker les résultats
         ArrayList<Livre> res = new ArrayList<>();
         
@@ -101,7 +101,7 @@ public class EtagereV2 {
     }
 
     //6) Nouveaux livres (année courante) 
-    public void afficherNouveauxLivres(int anneeActuelle) {
+    public void afficherNouveauxLivres2(int anneeActuelle) {
         boolean trouve = false; // Variable pour savoir si on a trouvé au moins un livre
         
         // Parcours de tous les livres de l'étagère
@@ -125,8 +125,8 @@ public class EtagereV2 {
     }
 
     //7) Changer nb de pages d’un livre (par code) 
-    public void changerNbPages(int code, int nbPages) {
-        int idx = indexOfCode(code);
+    public void changerNbPages2(int code, int nbPages) {
+        int idx = indexOfCode2(code);
         if (idx == -1) {
             System.out.println("Livre code " + code + " introuvable.");
             return;
@@ -135,7 +135,7 @@ public class EtagereV2 {
     }
 
     //8) Affichage de tous les livres 
-    public void afficherLivres() {
+    public void afficherLivres2() {
         if (nbLivres == 0) {
             System.out.println(" Aucune entrée sur l’étagère.");
             return;
@@ -150,14 +150,14 @@ public class EtagereV2 {
     /**
      * Trie tous les livres de l'étagère par ordre croissant de nombre de pages.
      */
-    public void trierParNombreDePages() {
+    public void trierParNombreDePages2() {
         // Tri de l'ArrayList en utilisant un Comparator basé sur le nombre de pages
         // Comparator.comparingInt(Livre::getNbPages) compare les livres par leur nombre de pages
         livres.sort(Comparator.comparingInt(Livre::getNbPages));
     }
 
     //10) Recherche titres par auteur 
-    public String[] chercherTitresParAuteur(String auteur) {
+    public String[] chercherTitresParAuteur2(String auteur) {
         ArrayList<String> titres = new ArrayList<>();
         for (int i = 0; i < nbLivres; i++) {
             if (livres.get(i).getAuteur().equalsIgnoreCase(auteur)) {

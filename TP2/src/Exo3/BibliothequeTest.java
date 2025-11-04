@@ -65,42 +65,42 @@ public class BibliothequeTest {
         EtagereV2 etagere2 = new EtagereV2(1, "Littérature", 5); 
 
         //Ajout de livres
-        etagere2.ajouterLivre(l1);
-        etagere2.ajouterLivre(l2);
-        etagere2.ajouterLivre(l3);
-        etagere2.ajouterLivre(l4);//contient 300pages apres la modification ligne 50
+        etagere2.ajouterLivre2(l1);
+        etagere2.ajouterLivre2(l2);
+        etagere2.ajouterLivre2(l3);
+        etagere2.ajouterLivre2(l4);//contient 300pages apres la modification ligne 50
 
         // Affichage des livres 
         System.out.println("\nListe des livres sur l’étagère :");
-        etagere2.afficherLivres();
+        etagere2.afficherLivres2();
 
         // Suppression d’un livre
         System.out.println("\nSuppression du livre avec code 102 :");
-        etagere2.supprimerLivre(102);
-        etagere2.afficherLivres();
+        etagere2.supprimerLivre2(102);
+        etagere2.afficherLivres2();
 
         //  4) Somme des pages 
-        int totalPages2 = etagere2.sommePages();
+        int totalPages2 = etagere2.sommePages2();
         System.out.println("\nNombre total de pages : " + totalPages2);
 
         // 5) Recherche par titre 
         System.out.println("\nRecherche du livre '1984' :");
-        Livre recherche2 = etagere2.chercherLivreParTitre("1984");
+        Livre recherche2 = etagere2.chercherLivreParTitre2("1984");
         if (recherche != null) System.out.println("Trouvé → " + recherche2);
 
         //  6) Petits livres (<200 pages - seuil) 
         System.out.println("\nLivres avec moins de 200 pages :");
-        etagere2.chercherPetitsLivres(200);
+        etagere2.chercherPetitsLivres2(200);
 
         //  7) Nouveaux livres (édition 1949) 
         System.out.println("\n");
-        etagere2.afficherNouveauxLivres(1949);
+        etagere2.afficherNouveauxLivres2(1949);
         
         // 8) Modifier le nombre de pages d'un livre en fonction de son code.
-        etagere2.changerNbPages(104, 185);
+        etagere2.changerNbPages2(104, 185);
         // Petits livres (<200 pages - seuil) après modifier le nombre de pages
         System.out.println("\nLivres avec moins de 200 pages :");
-        etagere2.chercherPetitsLivres(200);
+        etagere2.chercherPetitsLivres2(200);
         
     }
 }

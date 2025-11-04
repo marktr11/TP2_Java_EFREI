@@ -34,12 +34,12 @@ public class TestTableau {
     System.out.println("Nombre minimum: "+min);
     
     //Trouver et afficher le nombre de pages moyen.
-    double moyen;
-    moyen = somme / tab.length;
+    int moyen = somme / tab.length; //Normalement, déclarer double comme type de variable, 
+                                    //mais pour assurer le résultat attendu, on déclare int.
     System.out.println("Le nombre de pages moyen: "+moyen);
     
     //Trier le tableau (ordre croissant) puis ré-afficher après le trie.
-    int [] newTab;
+    
     Arrays.sort(tab);
     System.out.println("\nAffichage des nombres de pages (ordre croissant)");
     for (int i = 0; i < tab.length;i++){
