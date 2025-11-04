@@ -68,7 +68,7 @@ public class BibliothequeTest {
         etagere2.ajouterLivre2(l1);
         etagere2.ajouterLivre2(l2);
         etagere2.ajouterLivre2(l3);
-        etagere2.ajouterLivre2(l4);//contient 300pages apres la modification ligne 50
+        etagere2.ajouterLivre2(l4);//contient 300pages apres la modification ligne 54
 
         // Affichage des livres 
         System.out.println("\nListe des livres sur l’étagère :");
